@@ -1,5 +1,6 @@
 const pkgVersion = 'ramda@0.24.1'
-const {map, compose} = require('../packages')[pkgVersion]
+const {map, compose} = require('../../packages')[pkgVersion]
+const traverse = require('../../traverse_iterable')
 
 module.exports = {
     name: pkgVersion,
@@ -8,6 +9,7 @@ module.exports = {
         const {double} = this
         const mapDouble = map(double)
         const maps = Array(n).fill(mapDouble)
-        compose(...maps)(this.iterable)
+        const iterable = compose(...maps)(this.iterable)
+        traverse(iterable)
     }
 }

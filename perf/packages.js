@@ -4,7 +4,8 @@ const packages = [
     'ramda@0.24.1',
     'immutable@3.8.1',
     'imlazy@6.3.1',
-    'functor-iterable@0.1.0'
+    'functor-iterable@0.1.1',
+    'functor-arraylike-iterable@0.1.0'
 ]
 
 packages.forEach(package => niv.install(package))

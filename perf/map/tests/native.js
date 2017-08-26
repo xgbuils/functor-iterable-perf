@@ -1,6 +1,9 @@
+const traverse = require('../../traverse_iterable')
+
 module.exports = {
     name: 'native',
     fn () {
-        this.iterable.map(this.double)
+        const iterable = this.iterable.map(this.double)
+        traverse(iterable)
     }
 }

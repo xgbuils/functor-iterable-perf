@@ -1,14 +1,16 @@
+const pkgVersion = 'functor-arraylike-iterable@0.1.0'
+const FunctorIterable = require('../../packages')[pkgVersion]
 const traverse = require('../../traverse_iterable')
 
 module.exports = {
-    name: 'native',
+    name: pkgVersion,
     fn () {
         const n = this.numberOfMaps
         const {double} = this
-        let {iterable} = this
+        let iterable = new FunctorIterable(this.iterable)
         for (let i = 0; i < n; ++i) {
             iterable = iterable.map(double)
-            traverse(iterable)
         }
+        traverse(iterable)
     }
 }

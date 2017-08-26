@@ -1,5 +1,5 @@
 const pkgVersion = 'imlazy@6.3.1'
-const {map} = require('../packages')[pkgVersion]
+const {map} = require('../../packages')[pkgVersion]
 const traverse = require('../../traverse_iterable')
 
 module.exports = {

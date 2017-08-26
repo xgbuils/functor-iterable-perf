@@ -1,11 +1,11 @@
-const pkgVersion = 'immutable@3.8.1'
-const {List} = require('../../packages')[pkgVersion]
+const pkgVersion = 'functor-iterable@0.1.1'
+const FunctorIterable = require('../../packages')[pkgVersion]
 const traverse = require('../../traverse_iterable')
 
 module.exports = {
     name: pkgVersion,
     fn () {
-        const iterable = new List(this.iterable)
+        const iterable = new FunctorIterable(this.iterable)
             .map(this.double)
         traverse(iterable)
     }

@@ -1,5 +1,5 @@
-const pkgVersion = 'functor-iterable@0.1.0'
-const FunctorIterable = require('../packages')[pkgVersion]
+const pkgVersion = 'functor-iterable@0.1.1'
+const FunctorIterable = require('../../packages')[pkgVersion]
 const traverse = require('../../traverse_iterable')
 
 module.exports = {
