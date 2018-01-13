@@ -27,7 +27,9 @@
   "homepage": "https://github.com/xgbuils/perf-functor-iterable#readme",
   "dependencies": {
     "benchmark": "^2.1.4",
-    "npm-install-version": "^6.0.2"
+    "npm-install-version": "^6.0.2",
+    "ramda": "^0.25.0",
+    "require-dir": "^0.3.2"
   },
   "devDependencies": {
     "eslint": "^4.4.0"

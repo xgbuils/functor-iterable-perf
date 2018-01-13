@@ -1,12 +1,11 @@
-module.exports = dep => {
-    const {map} = dep
+module.exports = Iterable => {
     return {
         fn () {
             const n = this.numberOfMaps
-            const mapDouble = map(this.cb)
-            let {iterable} = this
+            const double = this.cb
+            let iterable = new Iterable(this.iterable)
             for (let i = 0; i < n; ++i) {
-                iterable = mapDouble(iterable)
+                iterable = iterable.map(double)
             }
             return iterable
         },

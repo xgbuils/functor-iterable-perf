@@ -18,7 +18,6 @@
         "eol-last": "error",
         "eqeqeq": ["error", "smart"],
         "generator-star-spacing": ["error", {"before": false, "after": true}],
-        "global-require": "error",
         "guard-for-in": "error",
         "indent": "error",
         "keyword-spacing": "error",
