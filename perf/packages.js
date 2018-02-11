@@ -17,10 +17,10 @@ const packages = [{
     versions: ['1.1.1']
 }, {
     package: 'functor-iterable',
-    versions: ['0.1.1']
+    versions: ['0.1.1', '0.1.2']
 }, {
     package: 'functor-arraylike-iterable',
-    versions: ['0.1.0']
+    versions: ['0.1.0', '0.1.1', '0.1.2']
 }, {
     package: 'functor-filter-arraylike-iterable',
     versions: ['0.1.1']
